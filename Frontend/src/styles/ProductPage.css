@@ -1,0 +1,119 @@
+/* --- Product Page Redesign --- */
+.product-hero {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+}
+.product-hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.product-hero-desc {
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-features-section {
+  background: #f8f9fa;
+  padding: 48px 0 64px 0;
+}
+.product-features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.product-feature-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+  padding: 36px 32px 32px 32px;
+  flex: 1 1 320px;
+  max-width: 350px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.product-feature-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(44,62,80,0.16);
+}
+.product-feature-icon {
+  margin-bottom: 18px;
+}
+.product-feature-card h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+.product-feature-card p {
+  font-size: 1.05rem;
+  color: #444;
+  text-align: center;
+}
+/* ProductPage.css */
+.product-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding-bottom: 3rem;
+}
+
+.product-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.product-header h1 {
+  font-size: 2.5rem;
+  color: #232946;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.product-header p {
+  color: #4f5d75;
+  font-size: 1.2rem;
+}
+
+.product-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.product-feature-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(44, 62, 80, 0.07), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #e3e8ee;
+}
+.product-feature-card:hover {
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13), 0 2px 8px rgba(0,0,0,0.08);
+  transform: translateY(-6px) scale(1.03);
+  border-color: #4f8cff;
+}
+.product-feature-card h2 {
+  color: #1a2236;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.product-feature-card p {
+  color: #4f5d75;
+  font-size: 1.05rem;
+}

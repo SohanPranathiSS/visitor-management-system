@@ -1,0 +1,278 @@
+/* --- Contact Us Page Redesign --- */
+.contactus-hero {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+}
+.contactus-hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.contactus-hero-desc {
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactus-main-section {
+  background: #f8f9fa;
+  padding: 48px 0 64px 0;
+}
+.contactus-main-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contactus-form {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+  padding: 36px 32px 32px 32px;
+  min-width: 320px;
+  max-width: 400px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.contactus-form label {
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 4px;
+}
+.contactus-form input,
+.contactus-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  background: #f9f9f9;
+  transition: border 0.18s;
+}
+.contactus-form input:focus,
+.contactus-form textarea:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+}
+.contactus-btn {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.contactus-btn:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(44,62,80,0.16);
+}
+.contactus-info-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+  padding: 36px 32px 32px 32px;
+  min-width: 280px;
+  max-width: 340px;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.contactus-info-icon {
+  margin-bottom: 12px;
+}
+.contactus-info-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+.contactus-info-card p {
+  font-size: 1.05rem;
+  color: #444;
+  text-align: center;
+  margin: 0;
+}
+.contactus-info-card a {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.18s;
+}
+.contactus-info-card a:hover {
+  color: #0056b3;
+}
+/* ContactUsPage.css */
+.contactus-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding-bottom: 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background: #1a2236;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a, .navbar-links li .login-btn {
+  color: #e0e7ef;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+}
+
+.navbar-links li a:hover, .navbar-links li .login-btn:hover {
+  color: #1a2236;
+  background: #e0e7ef;
+}
+
+.login-btn {
+  background: #4f8cff;
+  color: #fff !important;
+  padding: 0.3rem 1.1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(79,140,255,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.contactus-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.contactus-header h1 {
+  font-size: 2.5rem;
+  color: #232946;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.contactus-header p {
+  color: #4f5d75;
+  font-size: 1.2rem;
+}
+
+.contactus-form-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  gap: 2.5rem;
+}
+
+.contactus-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(44, 62, 80, 0.07), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 2.5rem 2rem;
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contactus-form label {
+  color: #232946;
+  font-weight: 500;
+  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contactus-form input,
+.contactus-form textarea {
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #e3e8ee;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f8fafc;
+  margin-top: 0.2rem;
+  transition: border 0.2s;
+}
+.contactus-form input:focus,
+.contactus-form textarea:focus {
+  border: 1.5px solid #4f8cff;
+  outline: none;
+}
+
+.contactus-form button.hero-cta {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.contactus-info {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(44, 62, 80, 0.07), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 2.5rem 2rem;
+  min-width: 260px;
+  max-width: 340px;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.contactus-info h2 {
+  color: #1a2236;
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.contactus-info p {
+  color: #4f5d75;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+.contactus-info a {
+  color: #4f8cff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.contactus-info a:hover {
+  color: #ff4d4f;
+  text-decoration: underline;
+}

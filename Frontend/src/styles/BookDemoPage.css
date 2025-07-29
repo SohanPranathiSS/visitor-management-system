@@ -1,0 +1,121 @@
+/* BookDemoPage.css */
+.bookdemo-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding-bottom: 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background: #1a2236;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a, .navbar-links li .login-btn {
+  color: #e0e7ef;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+}
+
+.navbar-links li a:hover, .navbar-links li .login-btn:hover {
+  color: #1a2236;
+  background: #e0e7ef;
+}
+
+.login-btn {
+  background: #4f8cff;
+  color: #fff !important;
+  padding: 0.3rem 1.1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(79,140,255,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.bookdemo-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.bookdemo-header h1 {
+  font-size: 2.5rem;
+  color: #232946;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.bookdemo-header p {
+  color: #4f5d75;
+  font-size: 1.2rem;
+}
+
+.bookdemo-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.bookdemo-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(44, 62, 80, 0.07), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 2.5rem 2rem;
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.bookdemo-form label {
+  color: #232946;
+  font-weight: 500;
+  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.bookdemo-form input,
+.bookdemo-form textarea {
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #e3e8ee;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f8fafc;
+  margin-top: 0.2rem;
+  transition: border 0.2s;
+}
+.bookdemo-form input:focus,
+.bookdemo-form textarea:focus {
+  border: 1.5px solid #4f8cff;
+  outline: none;
+}
+
+.bookdemo-form button.hero-cta {
+  margin-top: 1rem;
+  width: 100%;
+}

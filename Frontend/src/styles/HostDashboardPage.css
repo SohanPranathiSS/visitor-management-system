@@ -1,0 +1,178 @@
+/* --- Host Dashboard Modern Redesign --- */
+.host-dashboard-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding-bottom: 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3436;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #0056b3;
+}
+
+.host-dashboard-container {
+  max-width: 1800px;
+  margin-left: 0; /* Align to the left */
+  padding: 50px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.host-dashboard-header-modern {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  padding: 24px 0 0 0;
+}
+
+.host-dashboard-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: #222;
+}
+
+.host-dashboard-subtitle {
+  font-size: 1.1rem;
+  color: #007bff;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.host-dashboard-table-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+  padding: 32px 24px 24px 24px;
+  margin-bottom: 32px;
+  overflow-x: auto;
+  width: 100%; /* Use 100% instead of 98vw */
+  margin-left: 0; /* Ensure left alignment */
+}
+
+.host-dashboard-table-modern {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: transparent;
+}
+
+.host-dashboard-table-modern th, .host-dashboard-table-modern td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.host-dashboard-table-modern th {
+  background: #f8f9fa;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.host-dashboard-table-modern tr:last-child td {
+  border-bottom: none;
+}
+
+.host-dashboard-photo {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+.host-dashboard-checkout-modern {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 7px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.host-dashboard-checkout-modern:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(44,62,80,0.16);
+}
+
+.host-dashboard-checkedout {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Add Visitors Button Styling */
+.add-visitor-btn {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.add-visitor-btn:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(44,62,80,0.16);
+}
+
+.host-dashboard-error {
+  color: #d63031;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+
+.logout-btn{
+  background: #f0ad4e;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+}

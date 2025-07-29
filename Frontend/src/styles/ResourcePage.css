@@ -1,0 +1,384 @@
+/* --- Resource Modal Redesign --- */
+.resource-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(44, 62, 80, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.resource-modal-content {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+  padding: 40px 32px 32px 32px;
+  min-width: 320px;
+  max-width: 420px;
+  width: 90vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: modalPop 0.22s cubic-bezier(.4,1.6,.6,1);
+}
+
+@keyframes modalPop {
+  from { transform: scale(0.92) translateY(30px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.resource-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.18s;
+  z-index: 1;
+}
+.resource-modal-close:hover {
+  color: #007bff;
+}
+.resource-modal-icon {
+  margin-bottom: 18px;
+}
+.resource-modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+}
+.resource-modal-desc {
+  font-size: 1.08rem;
+  color: #444;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.resource-modal-extra {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px 14px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+.resource-modal-extra h3 {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #007bff;
+}
+.resource-modal-extra p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+.resource-modal-button {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.resource-modal-button:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(44,62,80,0.16);
+}
+/* --- Resource Page Redesign --- */
+.resource-hero {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+}
+.resource-hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.resource-hero-desc {
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.resource-cards-section {
+  background: #f8f9fa;
+  padding: 48px 0 64px 0;
+}
+.resource-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.resource-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+  padding: 36px 32px 32px 32px;
+  flex: 1 1 320px;
+  max-width: 350px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+}
+.resource-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(44,62,80,0.16);
+}
+.resource-card-icon {
+  margin-bottom: 18px;
+}
+.resource-card h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+.resource-card p {
+  font-size: 1.05rem;
+  color: #444;
+  text-align: center;
+}
+.resource-link {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: color 0.18s;
+}
+.resource-link:hover {
+  color: #0056b3;
+}
+/* Modal Styles (keep existing, but you can enhance if needed) */
+.resource-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  padding-bottom: 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background: #1a2236;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a, .navbar-links li .login-btn {
+  color: #e0e7ef;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+}
+
+.navbar-links li a:hover, .navbar-links li .login-btn:hover {
+  color: #1a2236;
+  background: #e0e7ef;
+}
+
+.login-btn {
+  background: #4f8cff;
+  color: #fff !important;
+  padding: 0.3rem 1.1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(79,140,255,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.resource-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.resource-header h1 {
+  font-size: 2.5rem;
+  color: #232946;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.resource-header p {
+  color: #4f5d75;
+  font-size: 1.2rem;
+}
+
+.resource-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.resource-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(44, 62, 80, 0.07), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #e3e8ee;
+  cursor: pointer;
+}
+.resource-card:hover {
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13), 0 2px 8px rgba(0,0,0,0.08);
+  transform: translateY(-6px) scale(1.03);
+  border-color: #4f8cff;
+}
+.resource-card h2 {
+  color: #1a2236;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.resource-card p {
+  color: #4f5d75;
+  font-size: 1.05rem;
+}
+.resource-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #4f8cff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.resource-link:hover {
+  color: #ff4d4f;
+  text-decoration: underline;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(35, 41, 70, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  border: 1px solid rgba(224, 231, 239, 0.3);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.2);
+  color: #232946;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #4f5d75;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #ff4d4f;
+}
+
+.modal-content h2 {
+  color: #1a2236;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: #4f5d75;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.extra-info {
+  background: rgba(224, 231, 239, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.extra-info h3 {
+  color: #1a2236;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.modal-button:hover {
+  background: #ff4d4f;
+}

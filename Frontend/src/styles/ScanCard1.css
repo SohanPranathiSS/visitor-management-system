@@ -1,0 +1,191 @@
+/* General container for the Scan Card page */
+.scan-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Main content box */
+.scan-card-content {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.scan-card-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.scan-card-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Container for the main action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* General button styling */
+.action-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn:hover {
+    transform: translateY(-3px);
+}
+
+.action-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: translateY(0);
+}
+
+.scan-btn {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+}
+.scan-btn:hover {
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.upload-btn {
+    background: linear-gradient(90deg, #5a6268 0%, #343a40 100%);
+}
+.upload-btn:hover {
+    box-shadow: 0 6px 20px rgba(90, 98, 104, 0.3);
+}
+
+/* Camera view styling */
+.camera-view {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.camera-video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #eee;
+}
+
+.camera-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.control-btn {
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.capture-btn {
+    background-color: #28a745;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+}
+
+/* Image preview section */
+.image-preview-section {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.image-preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.process-btn {
+    background: linear-gradient(90deg, #17a2b8 0%, #117a8b 100%);
+    width: 100%;
+    padding: 1rem;
+}
+.process-btn:hover {
+     box-shadow: 0 6px 20px rgba(23, 162, 184, 0.3);
+}
+
+/* Extracted data section */
+.extracted-data-section {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+.data-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e9ecef;
+}
+
+.data-card p {
+    margin: 0.5rem 0;
+    font-size: 1.05rem;
+    color: #343a40;
+}
+
+.data-card strong {
+    color: #007bff;
+}
+
+.confirm-btn {
+    background: linear-gradient(90deg, #28a745 0%, #218838 100%);
+    width: 100%;
+    padding: 1rem;
+}
+.confirm-btn:hover {
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
+}
+
+.error-message {
+    color: #d63031;
+    margin-top: 1rem;
+    font-weight: 500;
+}
