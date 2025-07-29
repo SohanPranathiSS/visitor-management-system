@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+Frontend/node_modules/
+Backend/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ML/__pycache__/
+
+# Environment variables
+.env
+.env.local
+Backend/.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Database
+*.db
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Uploads
+ML/static/uploads/*
+!ML/static/uploads/.gitkeep
+
+# Build directories (if any)
+dist/
+build/
