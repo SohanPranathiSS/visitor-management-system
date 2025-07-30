@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "build": "echo \"Backend build completed - Ready for production\"",
     "setup-db": "node setup-database.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

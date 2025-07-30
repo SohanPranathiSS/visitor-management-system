@@ -1,5 +1,6 @@
 // The base URL for your backend API
-const API_BASE_URL = 'http://localhost:4000/api';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:4000';
+const API_URL = `${API_BASE_URL}/api`;
 
 /**
  * A centralized request function to handle all API calls.
@@ -23,7 +24,7 @@ const request = async (endpoint, options = {}) => {
   }
 
   try {
-    const response = await fetch(`${API_BASE_URL}${endpoint}`, { ...options, headers });
+    const response = await fetch(`${API_URL}${endpoint}`, { ...options, headers });
 
     // Handle cases where the server might not return JSON (e.g., server down)
     const contentType = response.headers.get('content-type');
