@@ -10,8 +10,11 @@ import os
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-# CORS configuration for both endpoints
-CORS(app, resources={r"/extract-id-number": {"origins": "http://localhost:3000"}, r"/upload": {"origins": "http://localhost:3000"}})
+# CORS configuration for both endpoints - allow your frontend domain
+CORS(app, resources={
+    r"/extract-id-number": {"origins": ["http://localhost:3000", "https://your-frontend-domain.onrender.com"]}, 
+    r"/upload": {"origins": ["http://localhost:3000", "https://your-frontend-domain.onrender.com"]}
+})
 
 # Configuration for file uploads
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
@@ -358,4 +361,5 @@ def upload_image():
 
 if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
